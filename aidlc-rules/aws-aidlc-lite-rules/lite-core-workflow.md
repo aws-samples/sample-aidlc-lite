@@ -11,7 +11,7 @@ The AI model intelligently assesses what stages are needed based on:
 4. Risk and impact assessment
 
 ## MANDATORY: Rule Details Loading
-**CRITICAL**: When performing any phase, you MUST read and use relevant content from rule detail files in `.kiro/aws-aidlc-lite-rule-details/` or `.amazonq/aws-aidlc-lite-rule-details/` directory.
+**CRITICAL**: When performing any phase, you MUST read and use relevant content from rule detail files in the `.aidlc-lite-rule-details/` directory at the project root.
 
 **Common Rules**: ALWAYS load common rules at workflow start:
 - Load `common/core-rules.md` — this is the consolidated rules file containing process overview (§1), terminology (§2), welcome & orientation (§3), adaptive depth (§4), questioning philosophy (§5), session continuity (§6), mid-workflow changes (§7), error handling (§8), and content & diagram standards (§9)
@@ -38,7 +38,7 @@ The AI model intelligently assesses what stages are needed based on:
 **CRITICAL**: When starting ANY software development request, you MUST display the welcome message.
 
 **How to Display Welcome Message**:
-1. Load the welcome & orientation content from `common/core-rules.md` §3 (found in `.kiro/aws-aidlc-lite-rule-details/` or `.amazonq/aws-aidlc-lite-rule-details/`)
+1. Load the welcome & orientation content from `common/core-rules.md` §3 (found in `.aidlc-lite-rule-details/`)
 2. Display the complete message to the user
 3. This should only be done ONCE at the start of a new workflow
 4. Do NOT reload this section in subsequent interactions to save context space
